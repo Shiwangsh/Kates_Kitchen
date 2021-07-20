@@ -1,0 +1,96 @@
+public function testEmptyUsername()
+    {
+        $pdo = new PDO('mysql:dbname=kitchen;host=127.0.0.1', 'student', 'student');
+        $users = new DatabaseTable($pdo, 'users');
+        $user = [
+            'username' => '',
+            'password' => 'letmein',
+            'is_admin' => '1'
+        ];
+
+        $valid = addUser($users, $user);
+        $this->assertFalse($valid);
+    }
+
+    public function testEmptyPassword()
+    {
+        $pdo = new PDO('mysql:dbname=kitchen;host=127.0.0.1', 'student', 'student');
+        $users = new DatabaseTable($pdo, 'users');
+        $user = [
+            'username' => 'Shiwangsh',
+            'password' => '',
+            'is_admin' => '1'
+        ];
+
+        $valid = addUser($users, $user);
+        $this->assertFalse($valid);
+    }
+
+    **********************************************************
+    MENU
+
+     public function testEmptyname()
+    {
+        $pdo = new PDO('mysql:dbname=kitchen;host=127.0.0.1', 'student', 'student');
+        $menus = new DatabaseTable($pdo, 'menus');
+        $menu = [
+            'name' => '',
+            'description' => 'This pub classic is made  fresh in house with your choice of chunky chips or curly fries.',
+            'price' => '10',
+            'image' => 'images/image1.jpg'
+        ];
+
+        $valid = addMenu($menus, $menu);
+        $this->assertFalse($valid);
+    }
+
+    public function testEmptyDescription()
+    {
+        $pdo = new PDO('mysql:dbname=kitchen;host=127.0.0.1', 'student', 'student');
+        $menus = new DatabaseTable($pdo, 'menus');
+        $menu = [
+            'name' => 'Burger and chips',
+            'description' => '',
+            'price' => '10',
+            'image' => 'images/image1.jpg'
+        ];
+
+        $valid = addMenu($menus, $menu);
+        $this->assertFalse($valid);
+    }
+
+    public function testEmptyPrice()
+    {
+        $pdo = new PDO('mysql:dbname=kitchen;host=127.0.0.1', 'student', 'student');
+        $menus = new DatabaseTable($pdo, 'menus');
+        $menu = [
+            'name' => 'Burger and chips',
+            'description' => 'This pub classic is made  fresh in house with your choice of chunky chips or curly fries.',
+            'price' => '',
+            'image' => 'images/image1.jpg'
+        ];
+
+        $valid = addMenu($menus, $menu);
+        $this->assertFalse($valid);
+    }
+
+    public function testEmptyImage()
+    {
+        $pdo = new PDO('mysql:dbname=kitchen;host=127.0.0.1', 'student', 'student');
+        $menus = new DatabaseTable($pdo, 'menus');
+        $menu = [
+            'name' => 'Burger and chips',
+            'description' => 'This pub classic is made  fresh in house with your choice of chunky chips or curly fries.',
+            'price' => '1',
+            'image' => ''
+        ];
+
+        $valid = addMenu($menus, $menu);
+        $this->assertFalse($valid);
+    }
+
+    **********************************************
+
+    Category:
+
+    

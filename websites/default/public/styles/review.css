@@ -1,0 +1,27 @@
+.review-container{
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+   margin-top: 300px;
+
+}
+.review-title{
+    display: flex;
+    justify-content: space-evenly   ;
+
+}
+.review-title h3{
+    background-color: bisque;
+    margin: 10px 50px;
+    height: 30px;
+}
+.rating{
+    background-color: bisque;
+    display: flex;
+    align-items: center;   
+    margin: 10px 50px;
+    height: 20px;
+
+}
+
+
