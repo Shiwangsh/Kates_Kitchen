@@ -1,0 +1,4 @@
+# Kates_Kitchen
+The assignment requires us to alter and improve a small restaurant’s website called Kate’s Kitchen. The major aim is to complete the changes asked for by the client and rebuild the website in a way that makes it easy to manage the file. The way the code is designed currently has a lot of duplication and some glitches.
+
+This assignment was fairly challenging in terms of applying PHP skills we learned throughout the semester. Along with the coding aspect this assignment also tests and challenges one’s capabilities on organizing and structuring their project in such manner which will be beneficial on future real world development projects. Although the functionalities were easy to implement the real challenge was to design and structure the website in an object-oriented manner. However, use of functions, classes and PHPunit testing are properly applied in the submitted assignment.
